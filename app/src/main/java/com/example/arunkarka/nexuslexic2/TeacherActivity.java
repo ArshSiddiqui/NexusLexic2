@@ -4,6 +4,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 
 public class TeacherActivity extends ActionBarActivity {
@@ -12,6 +17,34 @@ public class TeacherActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
+        String[] studentList = {"Vishnu", "Ella", "Ved", "Likhitha"};
+        final ListView studentListView = (ListView) findViewById(R.id.student_list_view);
+
+        ArrayAdapter<String> studentListAdapter = new ArrayAdapter<String>(this,
+                                                        android.R.layout.simple_list_item_1,
+                                                        android.R.id.text1, studentList);
+
+        studentListView.setAdapter(studentListAdapter);
+
+        ListView.OnItemClickListener studentListViewItemClickListener = new ListView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                int itemPosition = position;
+
+                String itemValue = (String) studentListView.getItemAtPosition(itemPosition);
+                // Show Alert
+                Toast.makeText(getApplicationContext(),
+                        "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                        .show();
+            }
+        };
+
+        studentListView.setOnItemClickListener(studentListViewItemClickListener);
+
+
+
     }
 
     @Override
