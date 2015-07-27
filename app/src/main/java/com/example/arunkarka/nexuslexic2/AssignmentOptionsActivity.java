@@ -9,23 +9,23 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
-public class TeacherActivity extends ActionBarActivity {
+public class AssignmentOptionsActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher);
-        String[] studentList = {"Vishnu", "Ella", "Ved", "Likhitha"};
-        final ListView studentListView = (ListView) findViewById(R.id.student_list_view);
+        setContentView(R.layout.activity_assignment_options);
 
-        ArrayAdapter<String> studentListAdapter = new ArrayAdapter<String>(this,
-                                                        android.R.layout.simple_list_item_1,
-                                                        android.R.id.text1, studentList);
+        String[] assignmentOptions = {"Assignment One", "Assignment Two", "Assignment three", "Assignment four"};
+        final ListView assignmentOptionsListView = (ListView) findViewById(R.id.assignment_options_list_view);
 
-        studentListView.setAdapter(studentListAdapter);
+        ArrayAdapter<String> assignmentOptionsListAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1, assignmentOptions);
+
+        assignmentOptionsListView.setAdapter(assignmentOptionsListAdapter);
 
         ListView.OnItemClickListener studentListViewItemClickListener = new ListView.OnItemClickListener() {
 
@@ -34,27 +34,22 @@ public class TeacherActivity extends ActionBarActivity {
 
                 int itemPosition = position;
 
-                String itemValue = (String) studentListView.getItemAtPosition(itemPosition);
-                // Launch Student likes
-                startStudentLikesActivity();
+                String itemValue = (String) assignmentOptionsListView.getItemAtPosition(itemPosition);
+                // Launch a specific Assignment Option
+                //
             }
         };
 
-        studentListView.setOnItemClickListener(studentListViewItemClickListener);
-
-
-
+        assignmentOptionsListView.setOnItemClickListener(studentListViewItemClickListener);
     }
 
-    private void startStudentLikesActivity() {
-        Intent studentLikesIntent = new Intent(this, StudentLikesActivity.class);
-        startActivity(studentLikesIntent);
-    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_teacher, menu);
+        getMenuInflater().inflate(R.menu.menu_assignment_options, menu);
         return true;
     }
 

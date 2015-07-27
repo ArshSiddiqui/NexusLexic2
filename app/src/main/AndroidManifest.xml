@@ -24,6 +24,14 @@
             android:name=".StudentActivity"
             android:label="@string/title_activity_student" >
         </activity>
+        <activity
+            android:name=".StudentLikesActivity"
+            android:label="@string/title_activity_student_likes" >
+        </activity>
+        <activity
+            android:name=".AssignmentOptionsActivity"
+            android:label="@string/title_activity_assignment_options" >
+        </activity>
     </application>
 
 </manifest>
