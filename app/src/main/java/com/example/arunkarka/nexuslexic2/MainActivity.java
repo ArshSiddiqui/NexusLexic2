@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         username = usernameEditText.getText();
 
 
-        Button signIn = (Button) findViewById(R.id.sign_in_button);
+        Button signIn = (Button) findViewById(R.id.teacher_sign_in_button);
 
         View.OnClickListener signInButtonListener = new View.OnClickListener() {
             @Override
@@ -40,8 +40,25 @@ public class MainActivity extends ActionBarActivity {
 
         };
 
-
         signIn.setOnClickListener(signInButtonListener);
+
+        Button studentSignIn = (Button) findViewById(R.id.student_sign_in_button);
+
+        View.OnClickListener studentSignInButtonListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isTeacher) {
+                    //Launch Teacher Screen or Teacher Activity
+                    startTeacherActivity();
+                } else {
+                    //Launch Student Screen or Student Activity
+                    startStudentActivity();
+                }
+            }
+
+        };
+
+        studentSignIn.setOnClickListener(studentSignInButtonListener);
 
         Button exit = (Button) findViewById(R.id.exit_button);
 

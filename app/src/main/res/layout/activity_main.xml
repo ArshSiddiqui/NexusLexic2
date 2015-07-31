@@ -17,10 +17,15 @@
         android:layout_height="wrap_content"
         android:hint="@string/password_hint"/>
     <Button
-        android:id="@+id/sign_in_button"
+        android:id="@+id/teacher_sign_in_button"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:text="@string/sign_in"/>
+        android:text="@string/teacher_sign_in"/>
+    <Button
+        android:id="@+id/student_sign_in_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/student_sign_in"/>
     <Button
         android:id="@+id/exit_button"
         android:layout_width="100dp"

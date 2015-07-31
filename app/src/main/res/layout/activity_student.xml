@@ -4,9 +4,106 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.arunkarka.nexuslexic2.StudentActivity">
+    tools:context="com.example.arunkarka.nexuslexic2.TeacherActivity"
+    >
+    <ImageView
+        android:id="@+id/student_photo_imageview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/arun"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"/>
+    <Button
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/today_assignments"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/student_report_cards"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/student_photo_imageview"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/orange"
+        android:onClick="startStudentReportCardsActivity"/>
+    <Button
+        android:id="@+id/grades"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/grades"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/today_assignments"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/darkred"
+        android:onClick="startStudentListActivity"/>
+
+    <ImageView
+        android:id="@+id/achievements"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/achievements"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:layout_below="@id/grades"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/speaking_pals"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/speaking_pals"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/purple"
+        android:onClick="startStudentListActivity"/>
+    <Button
+        android:id="@+id/extra_practice"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/extra_practice"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/speaking_pals"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/darkblue"
+        android:onClick="startStudentReportCardsActivity"/>
+
+    <Button
+        android:id="@+id/group_work"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/group_work"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/extra_practice"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/green"
+        android:onClick="startStudentListActivity"/>
+    <Button
+        android:id="@+id/store"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/store"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/group_work"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:onClick="startStudentReportCardsActivity"/>
+
+    <Button
+        android:id="@+id/resources"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/resources"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/store"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:onClick="startStudentReportCardsActivity"/>
+
 
 </RelativeLayout>

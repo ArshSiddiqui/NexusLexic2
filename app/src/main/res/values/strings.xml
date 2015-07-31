@@ -6,7 +6,8 @@
     <string name="username_hint">User Name</string>
     <string name="password_hint">Password</string>
     <string name="exit">Exit</string>
-    <string name="sign_in">Sign In</string>
+    <string name="teacher_sign_in">Teacher Sign In</string>
+    <string name="student_sign_in">Student Sign In</string>
     <string name="title_activity_teacher">TeacherActivity</string>
     <string name="title_activity_student">StudentActivity</string>
     <string name="title_activity_student_likes">StudentLikesActivity</string>
@@ -18,6 +19,13 @@
     <string name="rewards">Rewards </string>
     <string name="student_groups">Student Groups</string>
     <string name="home_work">Home Work</string>
+    <string name="today_assignments">Today\'s Assignments</string>
+    <string name="grades">Grades </string>
+    <string name="speaking_pals">Speaking Pals/Chats </string>
+    <string name="extra_practice">Extra Practice </string>
+    <string name="group_work">Group Work </string>
+    <string name="store">Store </string>
+    <string name="resources">Resources </string>
 
 
 
