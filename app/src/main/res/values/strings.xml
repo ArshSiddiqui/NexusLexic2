@@ -8,8 +8,8 @@
     <string name="exit">Exit</string>
     <string name="teacher_sign_in">Teacher Sign In</string>
     <string name="student_sign_in">Student Sign In</string>
-    <string name="title_activity_teacher">TeacherActivity</string>
-    <string name="title_activity_student">StudentActivity</string>
+    <string name="title_activity_teacher">Teacher Home Page</string>
+    <string name="title_activity_student">Student Home Page</string>
     <string name="title_activity_student_likes">StudentLikesActivity</string>
     <string name="title_activity_assignment_options">AssignmentOptionsActivity</string>
     <string name="title_activity_student_list">StudentListActivity</string>
