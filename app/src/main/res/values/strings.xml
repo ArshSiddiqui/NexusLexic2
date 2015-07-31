@@ -11,6 +11,13 @@
     <string name="title_activity_student">StudentActivity</string>
     <string name="title_activity_student_likes">StudentLikesActivity</string>
     <string name="title_activity_assignment_options">AssignmentOptionsActivity</string>
+    <string name="title_activity_student_list">StudentListActivity</string>
+    <string name="students">Students</string>
+    <string name="student_report_cards">Student Report Cards</string>
+    <string name="chats">Chats</string>
+    <string name="rewards">Rewards </string>
+    <string name="student_groups">Student Groups</string>
+    <string name="home_work">Home Work</string>
 
 
 

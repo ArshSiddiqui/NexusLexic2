@@ -32,6 +32,10 @@
             android:name=".AssignmentOptionsActivity"
             android:label="@string/title_activity_assignment_options" >
         </activity>
+        <activity
+            android:name=".StudentListActivity"
+            android:label="@string/title_activity_student_list" >
+        </activity>
     </application>
 
 </manifest>
